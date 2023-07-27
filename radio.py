@@ -54,5 +54,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    st_number = int(input('Номер радиостанции: '))
+    st_number = 1
     play_music(channels[st_number-1])
