@@ -18,7 +18,7 @@ def play_radio(url):
     play_station = vlc.MediaPlayer(url)
     play_station.play()
     while True:
-        command = input("Для остановки введите команду (stop) или для смены волны введите ее номер\nПоле для ввода: ")
+        command = print("Для остановки введите команду (stop) или для смены волны введите ее номер\nПоле для ввода: ")
         if command == 'stop':
             play_station.stop()
             break
