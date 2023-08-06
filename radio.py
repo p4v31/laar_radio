@@ -1,4 +1,4 @@
-import threading
+mport threading
 import time
 import vlc
 
@@ -22,6 +22,7 @@ def play_radio(url):
         if command == 'stop':
             play_station.stop()
             break
+        if not command: continue
         elif command.isdigit():
             play_station.stop()
             play_music(channels[int(command)-1])
